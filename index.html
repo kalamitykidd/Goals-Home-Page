@@ -1,0 +1,55 @@
+<! DOCTYPE html>
+
+	<head>
+		<title> Hello, Regan. </title>
+		<link href="home_screen.css" rel="stylesheet">
+	</head>
+	
+	<body>
+		<header>
+		<img src="RK_logo.png">
+				<nav>
+					<ul>
+						<li><a href="index.html"> Home. </a></li>
+						<li><a href="goals.html"> Goals. </a></li>
+						<li><a href="fav_resources.html"> Favorite Resources. </a></li>
+						<li><a href="github_links.html"> Github. </a></li>
+					</ul>
+				</nav>
+				</header>
+				
+				<div class="content">
+				<h2>Hello, Regan.</h2>
+
+<button onclick="myGoal()">Set today's goal</button>
+
+<p id="greet"></p>
+
+<script>
+function myGoal() {
+  let text;
+  let goal = window.prompt("Please enter your goal:", "Finish today's assignment");
+  if (goal == null || goal == "") {
+    text = "Please enter a goal.";
+  } else {
+    text = "Today's goal is to: " + goal + ". You CAN do it!";
+  }
+  document.getElementById("greet").innerHTML = text;
+}
+</script>
+				
+				
+				
+				</div>
+				
+				
+			
+				
+				<footer id="footer"><a href="https://www.vecteezy.com/free-photos/nature">Nature Stock photos by Vecteezy</a>
+				<script>
+				document.getElementById("footer").innerHTML = "Today's date is:   " + Date();
+				</script>
+				</footer>
+			</div>
+	</body>
+</html>
