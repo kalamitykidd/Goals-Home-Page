@@ -1,4 +1,8 @@
 <! DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Personal page for setting goals, organizing favorite tutorial sites, and links
+to my github repositories.
+This is my home page. -->
 
 	<head>
 		<title> Hello, Regan. </title>
@@ -21,22 +25,22 @@
 				<div class="content">
 				<h2>Hello, Regan.</h2>
 
-<button onclick="myGoal()">Set today's goal</button>
+	<button onclick="myGoal()">Set today's goal</button>
 
-<p id="greet"></p>
+		<p id="greet"></p>
 
-<script>
-function myGoal() {
-  let text;
-  let goal = window.prompt("Please enter your goal:", "Finish today's assignment");
-  if (goal == null || goal == "") {
-    text = "Please enter a goal.";
-  } else {
-    text = "Today's goal is to: " + goal + ". You CAN do it!";
-  }
-  document.getElementById("greet").innerHTML = text;
-}
-</script>
+			<script>
+				function myGoal() {
+				let text;
+				let goal = window.prompt("Please enter your goal:", "Finish today's assignment");
+				if (goal == null || goal == "") {
+					text = "Please enter a goal.";
+				} else {
+					text = "Today's goal is to: " + goal + ". You CAN do it!";
+				}
+				document.getElementById("greet").innerHTML = text;
+				}
+			</script>
 				
 				
 				
